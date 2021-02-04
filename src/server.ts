@@ -87,7 +87,6 @@ const invokeOperations = (
           'AutenticacaoFuncionarioResponse'
         ][0]['AutenticacaoFuncionarioResult'][0]['token'][0];
     });
-
     return body;
   })();
   // https://medium.com/better-programming/how-to-perform-soap-requests-with-node-js-4a9627070eb6
