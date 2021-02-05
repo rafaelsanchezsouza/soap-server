@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/14.4.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add @types/easy-soap-request
+  /usr/local/Cellar/node/14.4.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add @types/easy-post-request
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2feasy-soap-request: Not found
+  Error: https://registry.yarnpkg.com/@types%2feasy-post-request: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:66987:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:140748:22)
       at Request.emit (events.js:315:20)
@@ -30,7 +30,7 @@ npm manifest:
   {
     "name": "soap-request",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "src/server.ts",
     "repository": "https://github.com/rafaelsanchezsouza/soap-request.git",
     "author": "Rafael Sanchez Souza <rafaelsanchezsouza@gmail.com>",
     "license": "MIT",
