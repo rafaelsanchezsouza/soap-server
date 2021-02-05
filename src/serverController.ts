@@ -24,12 +24,10 @@ export default {
           'autenticacaofuncionario'
         ][0]['cpf'][0];
 
-      const teste = invokeOperations(login, senha, matricula, cpf).then(
-        (teste: any) => {
-          console.log(teste);
-          Response.json(teste);
-        }
-      );
+      invokeOperations(login, senha, matricula, cpf).then((teste: any) => {
+        console.log(teste);
+        Response.json(teste);
+      });
     } catch ({ message: error }) {
       Response.status(500).send({ error });
     }
@@ -54,8 +52,7 @@ export default {
         ][0]['cpf'][0];
 
       const teste = invokeJsonOperations(login, senha, matricula, cpf).then(
-        (teste: any) => {
-          // console.log(token);
+        () => {
           Response.json(token);
         }
       );
