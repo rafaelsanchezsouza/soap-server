@@ -6,7 +6,7 @@
   "author": "Rafael Sanchez Souza <rafaelsanchezsouza@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "NODE_ENV=development node --tls-min-v1.0 -r ts-node/register src/server.ts",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
