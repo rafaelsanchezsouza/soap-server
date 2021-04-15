@@ -14,5 +14,6 @@ app.get('/', (req, res) => {
 
 app.post('/macae-soap', serverController.soapPost);
 app.post('/macae-json', serverController.jsonPost);
+app.post('/AberturaFuncionarioApp', serverController.appPost);
 
 app.listen(PORT, () => console.log(`Servidor rodando na porta: ${PORT}`));
